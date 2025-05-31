@@ -13,28 +13,10 @@
         android:theme="@style/Theme.Myfirstfile"
         tools:targetApi="31">
         <activity
-            android:name=".Bts7Activity"
+            android:name=".ImageInsideActivity"
             android:exported="false" />
         <activity
-            android:name=".Bts6Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Bts5Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Bts4Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Bts3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Bts2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".BtsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".SpiashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>

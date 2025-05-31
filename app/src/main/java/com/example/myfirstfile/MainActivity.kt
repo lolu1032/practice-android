@@ -15,51 +15,62 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 1. 화면이 클릭되었다는 것을 알아야 합니다.
-        val image1 = findViewById<ImageView>(R.id.btsImage1)
+        val btn1 = findViewById<ImageView>(R.id.member1)
+        val btn2 = findViewById<ImageView>(R.id.member2)
+        val btn3 = findViewById<ImageView>(R.id.member3)
+        val btn4 = findViewById<ImageView>(R.id.member4)
+        val btn5 = findViewById<ImageView>(R.id.member5)
+        val btn6 = findViewById<ImageView>(R.id.member6)
+        val btn7 = findViewById<ImageView>(R.id.member7)
+        val btn8 = findViewById<ImageView>(R.id.member8)
+        val btn9 = findViewById<ImageView>(R.id.member9)
 
-        image1.setOnClickListener {
-            Toast.makeText(this,"1번 클릭 완료",Toast.LENGTH_LONG).show()
 
-            // 2. 화면이 클릭되면, 다음 화면으로 넘어가서, 사진을 크게 보여줌
-
-            var intent = Intent(this,BtsActivity::class.java)
+        btn1.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","1")
             startActivity(intent)
         }
-
-        // 7개 image들의 이름을 다 붙이고 각각 클릭 시 다른 액티비티로 이동
-        val image2 = findViewById<ImageView>(R.id.btsImage2)
-        val image3 = findViewById<ImageView>(R.id.btsImage3)
-        val image4 = findViewById<ImageView>(R.id.btsImage4)
-        val image5 = findViewById<ImageView>(R.id.btsImage5)
-        val image6 = findViewById<ImageView>(R.id.btsImage6)
-        val image7 = findViewById<ImageView>(R.id.btsImage7)
-
-        image2.setOnClickListener {
-            val intent = Intent(this,Bts2Activity::class.java)
+        btn2.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","2")
             startActivity(intent)
         }
-        image3.setOnClickListener {
-            val intent = Intent(this,Bts3Activity::class.java)
+        btn3.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","3")
             startActivity(intent)
         }
-        image4.setOnClickListener {
-            val intent = Intent(this,Bts4Activity::class.java)
+        btn4.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","4")
             startActivity(intent)
         }
-        image5.setOnClickListener {
-            val intent = Intent(this,Bts5Activity::class.java)
+        btn5.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","5")
             startActivity(intent)
         }
-        image6.setOnClickListener {
-            val intent = Intent(this,Bts6Activity::class.java)
+        btn6.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","6")
             startActivity(intent)
         }
-        image7.setOnClickListener {
-            val intent = Intent(this,Bts7Activity::class.java)
+        btn7.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","7")
             startActivity(intent)
         }
-
+        btn8.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","8")
+            startActivity(intent)
+        }
+        btn9.setOnClickListener {
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","9")
+            startActivity(intent)
+        }
 
     }
 }
